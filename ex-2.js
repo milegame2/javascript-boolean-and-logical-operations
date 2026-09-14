@@ -1,12 +1,15 @@
 // Exercise #2: Promotion Conditions
 
 // Start coding here
-let lastMonthPaidMoreThan4000;
-let isWeekday;
-let hasBoughtProductFromITCategory;
-let hasAttendedDiscountEvent;
-let isPlatinum;
+let lastMonthPaidMoreThan4000 = true;
+let isWeekday = true;
+let hasBoughtProductFromITCategory = true;
+let hasAttendedDiscountEvent =true;
+let isPlatinum = true;
 
-let hasPromotion;
-
-console.log(hasPromotion);
+let case1HasPromotion = lastMonthPaidMoreThan4000 && isWeekday && !hasBoughtProductFromITCategory && !hasAttendedDiscountEvent;
+let case2HasPromotion = isPlatinum;
+console.log(case1HasPromotion);
+console.log(case2HasPromotion);
+let JhonHasPromotion = lastMonthPaidMoreThan4000 && isWeekday && !hasBoughtProductFromITCategory && hasAttendedDiscountEvent || !isPlatinum;
+console.log('Jhon has promotion' + ': '+ JhonHasPromotion);
